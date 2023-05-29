@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char prevChar = '\0';  
+    char currChar;
+
+    while (cin.get(currChar)) {
+        if (currChar == ' ' && prevChar == ' ') {
+            
+            cout << ".";
+        } else {
+            cout << currChar;
+        }
+
+        prevChar = currChar;
+    }
+
+    return 0;
+}
